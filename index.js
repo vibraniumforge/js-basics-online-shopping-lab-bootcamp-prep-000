@@ -64,3 +64,12 @@ function placeOrder(cardNumber) {
     return `Your total cost is ${total}, which will be charged to the card ${cardNumber}`
   }
 }
+
+function searcher(item) {
+  let result=''
+  for (let i=0; i< getCart().length; i++) {
+    if (getCart()[i].itemName=== item) {
+      result=getCart()[i]
+    }
+  }
+}
