@@ -28,7 +28,7 @@ function viewCart() {
       for (let i=0; i< getCart().length-1; i++) {
         ans.push(`In your cart, you have ${getCart()[i].itemName} at $${getCart()[i].itemPrice},`);
       }
-        ans.push(`and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}`)
+        ans.push(`and ${getCart()[getCart().length-1].itemName} at $${getCart()[getCart().length-1].itemPrice}.`)
     } else {
       return "Your shopping cart is empty.";
     }
