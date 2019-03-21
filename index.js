@@ -64,7 +64,7 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you.";
   } else {
     console.log("t=", total())
-    let total = total();
+    let total = parseInt(total());
     setCart([]);
     return `Your total cost is ${total}, which will be charged to the card ${cardNumber}`
   }
