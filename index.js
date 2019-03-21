@@ -46,6 +46,7 @@ function total() {
 }
 
 function removeFromCart(item) {
+  console.log(item)
   return getCart().delete[item];
 }
 
