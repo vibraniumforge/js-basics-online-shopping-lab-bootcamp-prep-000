@@ -46,9 +46,14 @@ function total() {
 }
 
 function removeFromCart(item) {
-  const itemToRemove = searcher(item);
+  let itemToRemove = '';
+  for (let i=0; i< getCart().length; i++) {
+    if (getCart()[i].itemName=== item) {
+      itemToRemove=getCart()[i]
+    }
+  }
   if (itemToRemove) {
-    const index = getCart().indexOf(itemToRemove);
+    let index = getCart().indexOf(itemToRemove);
     getCart().splice(index, 1);
   } else {
     return "That item is not in your cart.";
