@@ -36,7 +36,6 @@ function viewCart() {
     return ans.join(" ");
   }
 
-
 function total() {
   let total=0;
   for (let i=0; i< getCart().length; i++) {
