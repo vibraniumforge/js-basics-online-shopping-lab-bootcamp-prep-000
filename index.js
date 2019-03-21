@@ -66,7 +66,7 @@ function placeOrder(cardNumber) {
     console.log("total=", total())
     let cartTotal = total();
     setCart([]);
-    return `Your total cost is ${cartTotal}, which will be charged to the card ${cardNumber}`
+    return `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}`
   }
 }
 
