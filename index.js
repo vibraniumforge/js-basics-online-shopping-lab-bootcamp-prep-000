@@ -50,7 +50,7 @@ function removeFromCart(item) {
     getCart().delete[item];
     return getCart();
   } else {
-
+    return "That item is not in your cart."
   }
 
 }
