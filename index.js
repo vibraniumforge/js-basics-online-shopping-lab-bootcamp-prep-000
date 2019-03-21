@@ -48,8 +48,9 @@ function total() {
 function removeFromCart(item) {
   const itemToRemove = searcher(item);
   if (itemToRemove) {
-    const index = getCart().indexOf(itemToRemove)
-    getCart().splice(index, 1)
+    const index = getCart().indexOf(itemToRemove);
+    console.log(index)
+    getCart().splice(index, 1);
   } else {
     return "That item is not in your cart.";
   }
