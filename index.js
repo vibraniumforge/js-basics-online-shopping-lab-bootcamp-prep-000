@@ -46,8 +46,13 @@ function total() {
 }
 
 function removeFromCart(item) {
-   getCart().delete[item];
-   return getCart();
+  if (getCart()[item]) {
+    getCart().delete[item];
+    return getCart();
+  } else {
+
+  }
+
 }
 
 function placeOrder(cardNumber) {
