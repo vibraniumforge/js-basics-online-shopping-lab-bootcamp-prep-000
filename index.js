@@ -23,6 +23,7 @@ function viewCart() {
   if (getCart().length===1) {
     for (let i=0; i< getCart().length; i++) {
       ans.push(`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`);
+    }
     } else if (getCart().length >1){
       for (let i=0; i< getCart().length-1; i++) {
         ans.push(`In your cart, you have ${getCart()[i].itemName} at $${getCart()[i].itemPrice},`);
