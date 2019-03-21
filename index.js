@@ -47,6 +47,7 @@ function total() {
 
 function removeFromCart(item) {
   const itemToRemove = searcher(item);
+  debugger;
   if (itemToRemove) {
     const index = getCart().indexOf(itemToRemove)
     getCart().splice(index, 1)
