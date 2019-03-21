@@ -47,7 +47,7 @@ function total() {
 
 function removeFromCart(item) {
   if (getCart()[item]) {
-    getCart().delete[item];
+    delete getCart()[item];
     return getCart();
   } else {
     return "That item is not in your cart.";
