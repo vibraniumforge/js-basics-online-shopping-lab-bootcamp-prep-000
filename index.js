@@ -22,7 +22,7 @@ function viewCart() {
   let ans = [];
   if (getCart().length===1) {
     for (let i=0; i< getCart().length; i++) {
-      ans.push(`In your cart, you have ${getCart()[i].itemName} at $${getCart()[i].itemPrice}.`);
+      ans.push(`In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`);
       }
       return ans.join(" ");
     } else if (getCart().length >1){
